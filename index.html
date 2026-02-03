@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Flipbook</title>
+
+  <!-- jQuery (required) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Turn.js -->
+  <script src="turn.js"></script>
+
+  <style>
+    #flipbook {
+      width: 800px;
+      height: 600px;
+      margin: auto;
+    }
+    #flipbook .page img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+
+</head>
+<body>
+
+<div id="flipbook">
+  <div class="page"><img src="Images/1.png"></div>
+  <div class="page"><img src="page2.jpg"></div>
+  <!-- add more pages -->
+</div>
+
+<script>
+  $("#flipbook").turn({
+    width: 800,
+    height: 600,
+    autoCenter: true
+  });
+</script>
+
+</body>
+</html>
